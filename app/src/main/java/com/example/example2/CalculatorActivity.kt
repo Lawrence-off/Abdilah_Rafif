@@ -1,5 +1,6 @@
 package com.example.example2
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
@@ -32,6 +33,12 @@ class CalculatorActivity : AppCompatActivity() {
         val operatorButtons = listOf(
             R.id.btnPlus, R.id.btnMinus, R.id.btnMultiply, R.id.btnDivide
         )
+
+        val buttonLogout = findViewById<Button>(R.id.buttonKeluar)
+        buttonLogout?.setOnClickListener {  // Safe call operator
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
 
         numberButtons.forEach { id ->
             findViewById<Button>(id)?.setOnClickListener {

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Register">
 
     <TextView
         android:id="@+id/textViewUsername"
@@ -14,12 +15,11 @@
         android:text="Username :"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="20dp"
         android:layout_marginTop="150dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/RegisTextUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Username"
@@ -41,7 +41,7 @@
         android:layout_marginTop="20dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/RegisTextPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -53,25 +53,13 @@
         android:layout_marginStart="10dp" />
 
     <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp" />
-
-    <TextView
         android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Belum punya akun? Daftar"
-        android:textColor="@android:color/holo_blue_dark"
-        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,19 +19,19 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity -->
+        </activity> <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-
-        <!-- CalculatorActivity -->
+            android:exported="false" /> <!-- CalculatorActivity -->
         <activity
             android:name=".CalculatorActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
     </application>
+
 </manifest>
